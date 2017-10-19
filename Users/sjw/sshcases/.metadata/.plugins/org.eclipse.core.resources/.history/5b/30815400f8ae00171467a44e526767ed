@@ -1,0 +1,17 @@
+package com.nesoft.service;
+
+import org.springframework.transaction.annotation.Transactional;
+
+import com.nesoft.dao.LogRegDao;
+import com.neusoft.model.User;
+@Transactional
+public class LogRegService {
+   private LogRegDao logRegDao;
+   public void setLogRegDao(LogRegDao logRegDao) {
+	this.logRegDao = logRegDao;
+   }
+   public User login(String username,Long password){
+	      User user =  logRegDao.login(username, password);
+	       return user;
+   }
+}

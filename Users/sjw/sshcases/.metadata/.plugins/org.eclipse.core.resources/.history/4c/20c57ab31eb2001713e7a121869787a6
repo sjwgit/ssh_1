@@ -1,0 +1,9 @@
+#reset{
+	float: left;
+    margin-top: -28px;
+}
+#submit{
+	float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}

@@ -1,0 +1,10 @@
+package com.neusoft.inter;
+
+import java.util.List;
+
+import com.neusoft.model.User;
+
+public interface LogandReg {
+  public  User login(String username,int password);
+  public void register();
+}

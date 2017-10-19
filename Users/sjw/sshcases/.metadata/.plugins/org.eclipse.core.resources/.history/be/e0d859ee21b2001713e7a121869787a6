@@ -1,0 +1,10 @@
+reset{
+	position: absolute;
+    margin-top: -26px;
+    margin-left: -10%;
+}
+#submit{
+	float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}

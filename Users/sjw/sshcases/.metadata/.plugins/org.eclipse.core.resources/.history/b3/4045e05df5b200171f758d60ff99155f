@@ -1,0 +1,15 @@
+#reg_reset{
+	position: absolute;
+    margin-top: -26px;
+    margin-left: -10%;
+}
+#reg_sub{
+	float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+#dvi1{
+	position: absolute;
+    margin-left: 56%;
+    color: red;
+}

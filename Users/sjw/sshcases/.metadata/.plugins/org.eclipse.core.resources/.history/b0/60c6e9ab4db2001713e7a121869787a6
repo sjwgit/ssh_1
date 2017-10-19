@@ -1,0 +1,31 @@
+package com.nesoft.dao;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.neusoft.inter.LogandReg;
+import com.neusoft.model.User;
+import com.neusoft.model.UserInfo;
+
+public class LogRegDao extends BaseDao implements LogandReg{
+
+	@Override
+	public User login(String username,String password) {
+		// TODO Auto-generated method stub
+		 String sql = "FROM User WHERE username=? AND password=? ";
+		 
+		  User user = (User) getSession().createQuery(sql).setString(0,username).setString(1, password).uniqueResult();
+		   System.out.println(user);
+		  return user;
+	}
+	@Override
+	public void  register(UserInfo userInfo,User user) {
+		// TODO Auto-generated method stub
+	     getSession().saveOrUpdate(userInfo);
+	    
+		 
+	}
+
+	
+}

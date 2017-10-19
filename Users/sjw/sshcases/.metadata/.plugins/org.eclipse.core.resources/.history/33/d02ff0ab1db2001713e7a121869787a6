@@ -1,0 +1,4 @@
+#reset{
+	float: left;
+    margin-top: -28px;
+}

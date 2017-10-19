@@ -1,0 +1,13 @@
+package com.neusoft.model;
+import java.io.Serializable;
+import java.util.List;
+public class UserInfo implements Serializable {
+   private  Integer id;
+   private  String name;
+   private  String sex;
+   private  String eamil;
+   private List<String> interests;
+   private String city;
+   private String IdCard;
+   
+}
